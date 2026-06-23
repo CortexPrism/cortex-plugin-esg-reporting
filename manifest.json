@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-esg-reporting",
-  "version": "1.0.0",
-  "description": "ESG & Sustainability Reporting — Collect carbon emissions, diversity metrics, governance data for SASB/GRI/TCFD reports",
+  "version": "1.0.1",
+  "description": "ESG & Sustainability Reporting \u2014 Collect carbon emissions, diversity metrics, governance data for SASB/GRI/TCFD reports",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-esg-reporting",
   "homepage": "https://cortexprism.io/marketplace/plugins/esg-reporting",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "esg_collect_data",
@@ -26,9 +29,20 @@
       "description": "Generate SASB/GRI/TCFD aligned report",
       "params": []
     },
-    { "name": "esg_set_targets", "description": "Set and track ESG targets", "params": [] }
+    {
+      "name": "esg_set_targets",
+      "description": "Set and track ESG targets",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
